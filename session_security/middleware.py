@@ -32,6 +32,7 @@ class SessionSecurityMiddleware(object):
             return
 
         now = datetime.now()
+        datetime.strptime("", "")
         self.update_last_activity(request, now)
 
         delta = now - get_last_activity(request.session)
